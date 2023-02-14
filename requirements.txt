@@ -1,0 +1,4 @@
+boto3~=1.26
+pyarrow~=11.0
+polars~=0.16
+connectorx~=0.3.2a2
