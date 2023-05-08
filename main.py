@@ -83,6 +83,7 @@ def read_sql(
 # the important part: the entire table will be in memory after reading.
 # if your table is too big, use read_partitioned_iterator
 def read_plain(conn) -> pl.LazyFrame:
+    query = QUERY_OVERWRITE
     if QUERY_OVERWRITE == "":
         query = f"select * from {SCHEMA}.{TABLE}"
 
